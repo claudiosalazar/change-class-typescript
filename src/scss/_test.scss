@@ -1,0 +1,39 @@
+
+.informacion {
+  @include alto(100vh);
+  @include flexbox();
+  @include align-content(center);
+  @include align-items(center);
+  @include flex-direction(column);
+  @include justify-content(center);
+  .ejemplo {
+    @include flexbox();
+    @include align-content(center);
+    @include align-items(center);
+    @include flex-direction(column);
+    @include justify-content(center);
+    &.inicio {
+      @include alto(100px);
+      @include transition(background-color .3s, color .3s);
+      background-color: red;
+    }
+    &.fin {
+      @include alto(200px);
+      @include transition(background-color .3s, color .3s);
+      background-color: green;
+    }
+  }
+  .btn {
+    @include alto(50px);
+    @include ancho(50px);
+    @include flexbox();
+    @include align-content(center);
+    @include align-items(center);
+    @include flex-direction(column);
+    @include justify-content(center);
+    background-color: black;
+    border-radius: 200px;
+    color: white;
+  }
+}
+
